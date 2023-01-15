@@ -1,39 +1,17 @@
 function generateRandomNumberFrom1to6() {
 
-    let randomNumber = Math.random();
-    randomNumber *= 6;
-    randomNumber = Math.floor(randomNumber);
-    randomNumber++;
-
-    return randomNumber;
+    return Math.floor(Math.random()*6) + 1;
 }
 
 function changeDice(playerNumber, randomNumber) {
 
-
-    if (randomNumber === 1) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice1.png");
-    }
-    else if (randomNumber === 2) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice2.png");
-    }
-    else if (randomNumber === 3) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice3.png");
-    }
-    else if (randomNumber === 4) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice4.png");
-    }
-    else if (randomNumber === 5) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice5.png");
-    }
-    else {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice6.png");
-
-    }
+    let randomImageSource = "images/dice" + randomNumber + ".png";
+    document.querySelectorAll("img")[playerNumber].setAttribute("src", randomImageSource);
 
 }
 
 function declareWinner(player1Score, player2Score){
+
     if(player1Score>player2Score){
         document.querySelector(".container h1").textContent = "🏆Player 1 Won";
     }
@@ -43,9 +21,8 @@ function declareWinner(player1Score, player2Score){
     else{
         document.querySelector(".container h1").textContent = "Draw";
     }
+
 }
-
-
 
 let player1 = 0;
 let player2 = 1;
