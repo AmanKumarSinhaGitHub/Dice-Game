@@ -12,22 +12,22 @@ function changeDice(playerNumber, randomNumber) {
 
 
     if (randomNumber === 1) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "/images/dice1.png");
+        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice1.png");
     }
     else if (randomNumber === 2) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "/images/dice2.png");
+        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice2.png");
     }
     else if (randomNumber === 3) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "/images/dice3.png");
+        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice3.png");
     }
     else if (randomNumber === 4) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "/images/dice4.png");
+        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice4.png");
     }
     else if (randomNumber === 5) {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "/images/dice5.png");
+        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice5.png");
     }
     else {
-        document.querySelectorAll('img')[playerNumber].setAttribute("src", "/images/dice6.png");
+        document.querySelectorAll('img')[playerNumber].setAttribute("src", "images/dice6.png");
 
     }
 
